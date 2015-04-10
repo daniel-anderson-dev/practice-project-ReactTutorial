@@ -37,10 +37,12 @@ server.mount_proc '/comments.json' do |req, res|
 end
 
 
+tutorialPage = 'Tutorial_15-19.html'
+
 # Effectively renders the HTML content through Ruby / WEBrick.  This is to by-pass any issues regarding "Same-origin Policy".
-server.mount_proc '/Tutorial_11-14.html' do |req, res|
+server.mount_proc ('/' + tutorialPage) do |req, res|
   
-  html = File.read('./Tutorial_11-14.html')
+  html = File.read('./' + tutorialPage)
 
   res['Content-Type'] = 'text/html'
   res['Cache-Control'] = 'no-cache'

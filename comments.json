@@ -1,4 +1,14 @@
 [
-  {"jsonAuthor": "Pete Hunt", "jsonText": "This is one comment"},
-  {"jsonAuthor": "Jordan Walke", "jsonText": "This is *another* comment"}
+    {
+        "jsonAuthor": "Pete Hunt",
+        "jsonText": "This is one comment"
+    },
+    {
+        "jsonAuthor": "Jordan Walke",
+        "jsonText": "This is *another* comment"
+    },
+    {
+        "jsonAuthor": "Daniel",
+        "jsonText": "test comment"
+    }
 ]
